@@ -8,7 +8,7 @@ from dateutil.parser import parse
 from babel.dates import format_datetime
 from dateutil.relativedelta import relativedelta
 
-__version__ = "0.1"
+__version__ = "v1.0.0"
 
 class DateTime:
 
@@ -82,7 +82,7 @@ class DateTime:
                 <tr>
                     <td>Era</td>
                     <td>G</td>
-                    <td>Replaced with the era string for the current date. One to three letters for the abbreviated form, four lettersfor the long form, five for the narrow form.</td>
+                    <td>Replaced with the era string for the current date. One to three letters for the abbreviated form, four letters for the long form, five for the narrow form.</td>
                 </tr>
                 <tr>
                     <td rowspan="2">Year</td>
