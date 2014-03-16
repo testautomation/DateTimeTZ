@@ -2,12 +2,6 @@
 # Copyright (c) 2014 Roman Merkushin
 # rmerkushin@ya.ru
 
-import time
-from datetime import datetime
-from dateutil.parser import parse
-from babel.dates import format_datetime
-from dateutil.relativedelta import relativedelta
-
 __version__ = "v1.0.0"
 
 class DateTime:
@@ -38,8 +32,7 @@ class DateTime:
             </tbody>
         </table>
         """
-        print "Suspend test execution on " + str(seconds) + " seconds."
-        time.sleep(int(seconds))
+        pass
 
     def get_unix_time(self):
         """
@@ -62,7 +55,7 @@ class DateTime:
         <p><b>Example result:</b><br>
         INFO : ${unix_time} = 1394694526.94</p>
         """
-        return time.time()
+        pass
 
     def get_timestamp(self, locale="en", time_format="dd-LL-y H:mm:ss.A", *args, **delta):
         """
@@ -259,9 +252,7 @@ class DateTime:
         INFO : ${timestamp_with_delta} = Янв. 2014 17:54<br>
         INFO : ${delta_and_cpecific_part} = Янв. 2012 17:54</p>
         """
-        delta = dict((key, int(value)) for (key, value) in delta.items())
-        timestamp = datetime.today() + relativedelta(**delta)
-        return format_datetime(timestamp, time_format, locale=locale)
+        pass
 
     def get_utc_timestamp(self, locale="en", time_format="dd-LL-y H:mm:ss.A", *args, **delta):
         """
@@ -289,9 +280,7 @@ class DateTime:
         <p><b>Example result:</b><br>
         INFO : ${utc_timestamp} = 13 Март 2014 11:32:58</p>
         """
-        delta = dict((key, int(value)) for (key, value) in delta.items())
-        timestamp = datetime.utcnow() + relativedelta(**delta)
-        return format_datetime(timestamp, time_format, locale=locale)
+        pass
 
     def convert_timestamp_format(self, timestamp, time_format, locale="en"):
         """
@@ -327,5 +316,4 @@ class DateTime:
         INFO : ${timestamp} = 13-03-2014 18:38:07.67087810<br>
         INFO : ${rus_timestamp} = 13 Март 2014 18:38:07</p>
         """
-        timestamp = parse(timestamp)
-        return format_datetime(timestamp, time_format, locale=locale)
+        pass
