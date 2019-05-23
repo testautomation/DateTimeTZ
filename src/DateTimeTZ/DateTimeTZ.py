@@ -10,7 +10,7 @@ from dateutil.relativedelta import relativedelta
 
 __version__ = "v1.0.0"
 
-class DateTime:
+class DateTimeTZ:
 
     """
     The Robot Framework DateTime is a library which provides common functionality for manipulate date and time in different locales.\n
