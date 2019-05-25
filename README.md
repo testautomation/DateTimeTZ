@@ -18,4 +18,4 @@ Installation:
    using: `python setup.py install`
 
 [Keyword Documentation]: https://testautomation.github.io/DateTimeTZ/doc/DateTime.html
-[Robot Framework installed]: http://code.google.com/p/robotframework/wiki/Installation
+[Robot Framework]: http://code.google.com/p/robotframework/wiki/Installation
