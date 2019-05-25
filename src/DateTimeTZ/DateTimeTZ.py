@@ -10,7 +10,7 @@ from dateutil.parser import parse
 from babel.dates import format_datetime
 from dateutil.relativedelta import relativedelta
 
-__version__ = "v1.0.0"
+__version__ = VERSION
 
 class DateTimeTZ:
 
