@@ -12,9 +12,8 @@ Installation:
 1. Make sure you have [Robot Framework] installed.
 2. Install required dependencies:
  - `pip install -r requirements.txt`
-3. Download source distributions (*.tar.gz) of this library
-4. Extract source distribution to a temporary location.
-3. Go to temporary location and install library form source
+3. Git clone this repository
+4. Go into repository's root folder and install library form source
    using: `python setup.py install`
 
 [Keyword Documentation]: https://testautomation.github.io/DateTimeTZ/doc/DateTimeTZ.html
