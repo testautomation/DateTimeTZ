@@ -17,5 +17,5 @@ Installation:
 3. Go to temporary location and install library form source
    using: `python setup.py install`
 
-[Keyword Documentation]: https://testautomation.github.io/DateTimeTZ/doc/DateTime.html
+[Keyword Documentation]: https://testautomation.github.io/DateTimeTZ/doc/DateTimeTZ.html
 [Robot Framework]: http://code.google.com/p/robotframework/wiki/Installation
