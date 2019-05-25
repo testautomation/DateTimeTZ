@@ -3,14 +3,12 @@
 # Update 2019 by Tset Noitamotua
 
 
-
 import time
 from datetime import datetime
 from dateutil.parser import parse
 from babel.dates import format_datetime
 from dateutil.relativedelta import relativedelta
 
-__version__ = "v1.0.0"
 
 class DateTimeTZ:
 
