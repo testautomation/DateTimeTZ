@@ -1,5 +1,2 @@
-include setup.py
-include README.md
-include VERSION.txt
-include doc/DateTime.html
-recursive-include src/DateTime *.py
+include LICENSE
+include requirements.txt

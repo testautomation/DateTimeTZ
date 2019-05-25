@@ -2,5 +2,12 @@
 dist/
 build/
 *.pyc
+
+# Python / setuptools
+*.egg-info/
+
+# Python / virtual environments
 venv
-results
+
+# Robot Framework / test output
+results/
