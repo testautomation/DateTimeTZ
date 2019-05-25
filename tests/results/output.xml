@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190523 14:19:57.443" generator="Robot 3.1.1 (Python 2.7.15 on linux2)">
+<suite source="/home/learn/PROJECTS/MY/GITHUB/DateTime/tests/robot" id="s1" name="Robot">
+<suite source="/home/learn/PROJECTS/MY/GITHUB/DateTime/tests/robot/simpletest.robot" id="s1-s1" name="Simpletest">
+<test id="s1-s1-t1" name="Get Timestamp With Different Locales">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.493" level="TRACE">Arguments: [ '\n' ]</msg>
+<msg timestamp="20190523 14:19:57.493" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.494" starttime="20190523 14:19:57.493"></status>
+</kw>
+<kw name="Get Timestamp" library="DateTimeTZ">
+<doc>Returns current local timestamp in defined format and locale.</doc>
+<arguments>
+<arg>locale=rus</arg>
+<arg>time_format=dd LLL y H:mm:ss</arg>
+</arguments>
+<assign>
+<var>${timestamp}</var>
+</assign>
+<msg timestamp="20190523 14:19:57.494" level="TRACE">Arguments: [ locale='rus' | time_format='dd LLL y H:mm:ss' ]</msg>
+<msg timestamp="20190523 14:19:57.520" level="TRACE">Return: '23 \u043c\u0430\u0439 2019 14:19:57'</msg>
+<msg timestamp="20190523 14:19:57.521" level="INFO">${timestamp} = 23 май 2019 14:19:57</msg>
+<status status="PASS" endtime="20190523 14:19:57.521" starttime="20190523 14:19:57.494"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${timestamp}</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.521" level="TRACE">Arguments: [ '23 \u043c\u0430\u0439 2019 14:19:57' ]</msg>
+<msg timestamp="20190523 14:19:57.521" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.521" starttime="20190523 14:19:57.521"></status>
+</kw>
+<kw name="Get Timestamp" library="DateTimeTZ">
+<doc>Returns current local timestamp in defined format and locale.</doc>
+<arguments>
+<arg>locale=en</arg>
+<arg>time_format=dd LLL y H:mm:ss</arg>
+</arguments>
+<assign>
+<var>${timestamp}</var>
+</assign>
+<msg timestamp="20190523 14:19:57.522" level="TRACE">Arguments: [ locale='en' | time_format='dd LLL y H:mm:ss' ]</msg>
+<msg timestamp="20190523 14:19:57.534" level="TRACE">Return: '23 May 2019 14:19:57'</msg>
+<msg timestamp="20190523 14:19:57.534" level="INFO">${timestamp} = 23 May 2019 14:19:57</msg>
+<status status="PASS" endtime="20190523 14:19:57.534" starttime="20190523 14:19:57.522"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${timestamp}</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.535" level="TRACE">Arguments: [ '23 May 2019 14:19:57' ]</msg>
+<msg timestamp="20190523 14:19:57.535" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.535" starttime="20190523 14:19:57.534"></status>
+</kw>
+<kw name="Get Timestamp" library="DateTimeTZ">
+<doc>Returns current local timestamp in defined format and locale.</doc>
+<arguments>
+<arg>locale=de</arg>
+<arg>time_format=dd LLL y H:mm:ss</arg>
+</arguments>
+<assign>
+<var>${timestamp}</var>
+</assign>
+<msg timestamp="20190523 14:19:57.536" level="TRACE">Arguments: [ locale='de' | time_format='dd LLL y H:mm:ss' ]</msg>
+<msg timestamp="20190523 14:19:57.549" level="TRACE">Return: '23 Mai 2019 14:19:57'</msg>
+<msg timestamp="20190523 14:19:57.549" level="INFO">${timestamp} = 23 Mai 2019 14:19:57</msg>
+<status status="PASS" endtime="20190523 14:19:57.549" starttime="20190523 14:19:57.535"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${timestamp}</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.550" level="TRACE">Arguments: [ '23 Mai 2019 14:19:57' ]</msg>
+<msg timestamp="20190523 14:19:57.550" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.550" starttime="20190523 14:19:57.549"></status>
+</kw>
+<status status="PASS" endtime="20190523 14:19:57.550" critical="yes" starttime="20190523 14:19:57.492"></status>
+</test>
+<test id="s1-s1-t2" name="Get Timestamp With TimeZone (short name)">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.551" level="TRACE">Arguments: [ '\n' ]</msg>
+<msg timestamp="20190523 14:19:57.551" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.551" starttime="20190523 14:19:57.551"></status>
+</kw>
+<kw name="Get Timestamp" library="DateTimeTZ">
+<doc>Returns current local timestamp in defined format and locale.</doc>
+<arguments>
+<arg>locale=de</arg>
+<arg>time_format=yyyy-mm-dd H:mm:ss z</arg>
+</arguments>
+<assign>
+<var>${timestamp}</var>
+</assign>
+<msg timestamp="20190523 14:19:57.551" level="TRACE">Arguments: [ locale='de' | time_format='yyyy-mm-dd H:mm:ss z' ]</msg>
+<msg timestamp="20190523 14:19:57.552" level="TRACE">Return: '2019-19-23 14:19:57 UTC'</msg>
+<msg timestamp="20190523 14:19:57.552" level="INFO">${timestamp} = 2019-19-23 14:19:57 UTC</msg>
+<status status="PASS" endtime="20190523 14:19:57.552" starttime="20190523 14:19:57.551"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${timestamp}</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.552" level="TRACE">Arguments: [ '2019-19-23 14:19:57 UTC' ]</msg>
+<msg timestamp="20190523 14:19:57.552" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.552" starttime="20190523 14:19:57.552"></status>
+</kw>
+<status status="PASS" endtime="20190523 14:19:57.553" critical="yes" starttime="20190523 14:19:57.550"></status>
+</test>
+<test id="s1-s1-t3" name="Get Timestamp With TimeZone (full name)">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.553" level="TRACE">Arguments: [ '\n' ]</msg>
+<msg timestamp="20190523 14:19:57.554" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.554" starttime="20190523 14:19:57.553"></status>
+</kw>
+<kw name="Get Timestamp" library="DateTimeTZ">
+<doc>Returns current local timestamp in defined format and locale.</doc>
+<arguments>
+<arg>locale=de</arg>
+<arg>time_format=yyyy-mm-dd H:mm:ss zzzz</arg>
+</arguments>
+<assign>
+<var>${timestamp}</var>
+</assign>
+<msg timestamp="20190523 14:19:57.554" level="TRACE">Arguments: [ locale='de' | time_format='yyyy-mm-dd H:mm:ss zzzz' ]</msg>
+<msg timestamp="20190523 14:19:57.554" level="TRACE">Return: '2019-19-23 14:19:57 Koordinierte Weltzeit'</msg>
+<msg timestamp="20190523 14:19:57.554" level="INFO">${timestamp} = 2019-19-23 14:19:57 Koordinierte Weltzeit</msg>
+<status status="PASS" endtime="20190523 14:19:57.554" starttime="20190523 14:19:57.554"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${timestamp}</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.555" level="TRACE">Arguments: [ '2019-19-23 14:19:57 Koordinierte Weltzeit' ]</msg>
+<msg timestamp="20190523 14:19:57.555" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.555" starttime="20190523 14:19:57.555"></status>
+</kw>
+<status status="PASS" endtime="20190523 14:19:57.555" critical="yes" starttime="20190523 14:19:57.553"></status>
+</test>
+<test id="s1-s1-t4" name="Get Timestamp With TimeZone (RFC 822 format)">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.556" level="TRACE">Arguments: [ '\n' ]</msg>
+<msg timestamp="20190523 14:19:57.556" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.556" starttime="20190523 14:19:57.556"></status>
+</kw>
+<kw name="Get Timestamp" library="DateTimeTZ">
+<doc>Returns current local timestamp in defined format and locale.</doc>
+<arguments>
+<arg>locale=de</arg>
+<arg>time_format=yyyy-mm-dd H:mm:ss Z</arg>
+</arguments>
+<assign>
+<var>${timestamp}</var>
+</assign>
+<msg timestamp="20190523 14:19:57.557" level="TRACE">Arguments: [ locale='de' | time_format='yyyy-mm-dd H:mm:ss Z' ]</msg>
+<msg timestamp="20190523 14:19:57.557" level="TRACE">Return: '2019-19-23 14:19:57 +0000'</msg>
+<msg timestamp="20190523 14:19:57.557" level="INFO">${timestamp} = 2019-19-23 14:19:57 +0000</msg>
+<status status="PASS" endtime="20190523 14:19:57.557" starttime="20190523 14:19:57.556"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${timestamp}</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.558" level="TRACE">Arguments: [ '2019-19-23 14:19:57 +0000' ]</msg>
+<msg timestamp="20190523 14:19:57.558" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.558" starttime="20190523 14:19:57.558"></status>
+</kw>
+<status status="PASS" endtime="20190523 14:19:57.558" critical="yes" starttime="20190523 14:19:57.555"></status>
+</test>
+<test id="s1-s1-t5" name="Get Timestamp With TimeZone (GMT format)">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.559" level="TRACE">Arguments: [ '\n' ]</msg>
+<msg timestamp="20190523 14:19:57.559" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.559" starttime="20190523 14:19:57.559"></status>
+</kw>
+<kw name="Get Timestamp" library="DateTimeTZ">
+<doc>Returns current local timestamp in defined format and locale.</doc>
+<arguments>
+<arg>locale=de</arg>
+<arg>time_format=yyyy-mm-dd H:mm:ss ZZZZ</arg>
+</arguments>
+<assign>
+<var>${timestamp}</var>
+</assign>
+<msg timestamp="20190523 14:19:57.559" level="TRACE">Arguments: [ locale='de' | time_format='yyyy-mm-dd H:mm:ss ZZZZ' ]</msg>
+<msg timestamp="20190523 14:19:57.560" level="TRACE">Return: '2019-19-23 14:19:57 GMT+00:00'</msg>
+<msg timestamp="20190523 14:19:57.560" level="INFO">${timestamp} = 2019-19-23 14:19:57 GMT+00:00</msg>
+<status status="PASS" endtime="20190523 14:19:57.560" starttime="20190523 14:19:57.559"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${timestamp}</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.560" level="TRACE">Arguments: [ '2019-19-23 14:19:57 GMT+00:00' ]</msg>
+<msg timestamp="20190523 14:19:57.561" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.561" starttime="20190523 14:19:57.560"></status>
+</kw>
+<status status="PASS" endtime="20190523 14:19:57.561" critical="yes" starttime="20190523 14:19:57.558"></status>
+</test>
+<test id="s1-s1-t6" name="Get Timestamp with TimeZone with small v">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.562" level="TRACE">Arguments: [ '\n' ]</msg>
+<msg timestamp="20190523 14:19:57.562" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.562" starttime="20190523 14:19:57.561"></status>
+</kw>
+<kw name="Get Timestamp" library="DateTimeTZ">
+<doc>Returns current local timestamp in defined format and locale.</doc>
+<arguments>
+<arg>locale=de</arg>
+<arg>time_format=yyyy-mm-dd H:mm:ss v</arg>
+</arguments>
+<assign>
+<var>${timestamp}</var>
+</assign>
+<msg timestamp="20190523 14:19:57.562" level="TRACE">Arguments: [ locale='de' | time_format='yyyy-mm-dd H:mm:ss v' ]</msg>
+<msg timestamp="20190523 14:19:57.563" level="TRACE">Return: '2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit'</msg>
+<msg timestamp="20190523 14:19:57.563" level="INFO">${timestamp} = 2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit</msg>
+<status status="PASS" endtime="20190523 14:19:57.563" starttime="20190523 14:19:57.562"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${timestamp}</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.563" level="TRACE">Arguments: [ '2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit' ]</msg>
+<msg timestamp="20190523 14:19:57.563" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.563" starttime="20190523 14:19:57.563"></status>
+</kw>
+<kw name="Get Timestamp" library="DateTimeTZ">
+<doc>Returns current local timestamp in defined format and locale.</doc>
+<arguments>
+<arg>locale=de</arg>
+<arg>time_format=yyyy-mm-dd H:mm:ss vvvv</arg>
+</arguments>
+<assign>
+<var>${timestamp}</var>
+</assign>
+<msg timestamp="20190523 14:19:57.564" level="TRACE">Arguments: [ locale='de' | time_format='yyyy-mm-dd H:mm:ss vvvv' ]</msg>
+<msg timestamp="20190523 14:19:57.564" level="TRACE">Return: '2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit'</msg>
+<msg timestamp="20190523 14:19:57.564" level="INFO">${timestamp} = 2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit</msg>
+<status status="PASS" endtime="20190523 14:19:57.564" starttime="20190523 14:19:57.563"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${timestamp}</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.565" level="TRACE">Arguments: [ '2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit' ]</msg>
+<msg timestamp="20190523 14:19:57.565" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.565" starttime="20190523 14:19:57.564"></status>
+</kw>
+<status status="PASS" endtime="20190523 14:19:57.565" critical="yes" starttime="20190523 14:19:57.561"></status>
+</test>
+<test id="s1-s1-t7" name="Get Timestamp with TimeZone with big V">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.566" level="TRACE">Arguments: [ '\n' ]</msg>
+<msg timestamp="20190523 14:19:57.567" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.567" starttime="20190523 14:19:57.566"></status>
+</kw>
+<kw name="Get Timestamp" library="DateTimeTZ">
+<doc>Returns current local timestamp in defined format and locale.</doc>
+<arguments>
+<arg>locale=de</arg>
+<arg>time_format=yyyy-mm-dd H:mm:ss V</arg>
+</arguments>
+<assign>
+<var>${timestamp}</var>
+</assign>
+<msg timestamp="20190523 14:19:57.568" level="TRACE">Arguments: [ locale='de' | time_format='yyyy-mm-dd H:mm:ss V' ]</msg>
+<msg timestamp="20190523 14:19:57.569" level="TRACE">Return: '2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit'</msg>
+<msg timestamp="20190523 14:19:57.569" level="INFO">${timestamp} = 2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit</msg>
+<status status="PASS" endtime="20190523 14:19:57.569" starttime="20190523 14:19:57.567"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${timestamp}</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.569" level="TRACE">Arguments: [ '2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit' ]</msg>
+<msg timestamp="20190523 14:19:57.570" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.570" starttime="20190523 14:19:57.569"></status>
+</kw>
+<kw name="Get Timestamp" library="DateTimeTZ">
+<doc>Returns current local timestamp in defined format and locale.</doc>
+<arguments>
+<arg>locale=de</arg>
+<arg>time_format=yyyy-mm-dd H:mm:ss VVVV</arg>
+</arguments>
+<assign>
+<var>${timestamp}</var>
+</assign>
+<msg timestamp="20190523 14:19:57.570" level="TRACE">Arguments: [ locale='de' | time_format='yyyy-mm-dd H:mm:ss VVVV' ]</msg>
+<msg timestamp="20190523 14:19:57.571" level="TRACE">Return: '2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit'</msg>
+<msg timestamp="20190523 14:19:57.571" level="INFO">${timestamp} = 2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit</msg>
+<status status="PASS" endtime="20190523 14:19:57.571" starttime="20190523 14:19:57.570"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${timestamp}</arg>
+</arguments>
+<msg timestamp="20190523 14:19:57.572" level="TRACE">Arguments: [ '2019-19-23 14:19:57 Unbekannte Region (UTC) Zeit' ]</msg>
+<msg timestamp="20190523 14:19:57.572" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20190523 14:19:57.572" starttime="20190523 14:19:57.571"></status>
+</kw>
+<status status="PASS" endtime="20190523 14:19:57.573" critical="yes" starttime="20190523 14:19:57.565"></status>
+</test>
+<status status="PASS" endtime="20190523 14:19:57.574" starttime="20190523 14:19:57.463"></status>
+</suite>
+<status status="PASS" endtime="20190523 14:19:57.575" starttime="20190523 14:19:57.445"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="7">Critical Tests</stat>
+<stat fail="0" pass="7">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Robot" pass="7">Robot</stat>
+<stat fail="0" id="s1-s1" name="Simpletest" pass="7">Robot.Simpletest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
