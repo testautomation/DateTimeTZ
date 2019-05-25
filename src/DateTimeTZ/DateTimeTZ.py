@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2014 Roman Merkushin
-# rmerkushin@ya.ru
+# Copyright (c) 2014 Roman Merkushin / rmerkushin@ya.ru
+# Update 2019 by Tset Noitamotua
+
+
 
 import time
 from datetime import datetime
@@ -13,8 +15,8 @@ __version__ = "v1.0.0"
 class DateTimeTZ:
 
     """
-    The Robot Framework DateTime is a library which provides common functionality for manipulate date and time in different locales.\n
-    DateTime library is based on Babel and python-dateutil.
+    Robot Framework [https://github.com/testautomation/DateTimeTZ|DateTimeTZ] library provides functionality for manipulating date and time in different locales and time zones.\n
+    DateTime library is based on [http://babel.pocoo.org|Babel] and [http://labix.org/python-dateutil|python-dateutil].
     """
 
     ROBOT_LIBRARY_SCOPE = "GLOBAL"
@@ -95,7 +97,7 @@ class DateTimeTZ:
     def get_utc_timestamp(self, locale="en", time_format="dd-LL-y H:mm:ss.A", *args, **delta):
         """
         Returns current UTC timestamp in defined format and locale.\n
-        *Get Utc Timestamp* keyword arguments are the same as *Get Timestamp* arguments.\n
+        *Get Utc Timestamp* keyword arguments are the same as *`Get Timestamp`* arguments.\n
         *Example usage:*\n
         | *Variable* | *Keyword* | *Argument* | *Argument* |
         | ${utc_timestamp} | Get Utc Timestamp | locale=rus | time_format=dd LLL y H:mm:ss |
@@ -110,7 +112,7 @@ class DateTimeTZ:
         """
         Converts timestamp from one format to another.\n
         *Warning!* This keyword support only numeric or string with English locale words timestamps.\n
-        _"time_format"_ and _"locale"_ arguments are the same as *Get Timestamp* arguments.\n
+        _"time_format"_ and _"locale"_ arguments are the same as *`Get Timestamp`* arguments.\n
         *Example usage:*\n
         | *Variable* | *Keyword* | *Argument* | *Argument* |
         | ${timestamp} | Get Timestamp |
