@@ -1,6 +1,14 @@
 .idea/
+.vscode/
 dist/
 build/
 *.pyc
-venv
-results
+
+# Python / setuptools
+*.egg-info/
+
+# Python / virtual environments
+venv*
+
+# Robot Framework / test output
+results/

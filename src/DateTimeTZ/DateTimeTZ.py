@@ -3,17 +3,14 @@
 # Update 2019 by Tset Noitamotua
 
 
-
 import time
 from datetime import datetime
 from dateutil.parser import parse
 from babel.dates import format_datetime
 from dateutil.relativedelta import relativedelta
 
-__version__ = "v1.0.0"
 
 class DateTimeTZ:
-
     """
     Robot Framework [https://github.com/testautomation/DateTimeTZ|DateTimeTZ] library provides functionality for manipulating date and time in different locales and time zones.\n
     DateTime library is based on [http://babel.pocoo.org|Babel] and [http://labix.org/python-dateutil|python-dateutil].
@@ -28,7 +25,7 @@ class DateTimeTZ:
         | *Keyword* | *Argument* |
         | Wait | 5 |
         """
-        print "Suspend test execution on " + str(seconds) + " seconds."
+        print("Suspend test execution on " + str(seconds) + " seconds.")
         time.sleep(int(seconds))
 
     def get_unix_time(self):
@@ -90,7 +87,7 @@ class DateTimeTZ:
         INFO : ${timestamp_with_delta} = Янв. 2014 17:54\n
         INFO : ${delta_and_cpecific_part} = Янв. 2012 17:54
         """
-        delta = dict((key, int(value)) for (key, value) in delta.items())
+        delta = dict((key, int(value)) for (key, value) in list(delta.items()))
         timestamp = datetime.today() + relativedelta(**delta)
         return format_datetime(timestamp, time_format, locale=locale)
 
@@ -104,7 +101,7 @@ class DateTimeTZ:
         *Example result:*\n
         INFO : ${utc_timestamp} = 13 Март 2014 11:32:58
         """
-        delta = dict((key, int(value)) for (key, value) in delta.items())
+        delta = dict((key, int(value)) for (key, value) in list(delta.items()))
         timestamp = datetime.utcnow() + relativedelta(**delta)
         return format_datetime(timestamp, time_format, locale=locale)
 
