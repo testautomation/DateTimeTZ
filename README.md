@@ -6,7 +6,7 @@ Robot Framework DateTimeTZ library provides functionality for manipulating date 
 
 
 
-### :pushpin: Installation
+### Installation :pushpin:
 
 1. Install required dependencies:
    - `pip install -r requirements.txt`
@@ -21,7 +21,7 @@ Robot Framework DateTimeTZ library provides functionality for manipulating date 
 
 
 
-### :gift_heart: Credits
+### Credits :gift_heart:
 
 [DateTime Library]
 
