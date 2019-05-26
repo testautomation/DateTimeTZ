@@ -8,8 +8,7 @@ build/
 *.egg-info/
 
 # Python / virtual environments
-venv
-venv3
+venv*
 
 # Robot Framework / test output
 results/
