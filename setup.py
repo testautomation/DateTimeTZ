@@ -14,7 +14,8 @@ License :: OSI Approved :: Apache Software License
 Operating System :: POSIX
 Programming Language :: Python
 Programming Language :: Python :: 2.7
-Topic :: Software Development :: Testing :: Test Automation
+Programming Language :: Python :: 3.6
+Topic :: Software Development :: Testing
 Framework :: Robot Framework
 Framework :: Robot Framework :: Library
 """.strip().splitlines()
@@ -38,6 +39,7 @@ setup(
     version          = version,
     description      = "Robot Framework library for date/time with locales and time zones",
     long_description = readme,
+    long_description_content_type="text/markdown",
     author           = "Tset Noitamotua",
     author_email     = "tset.no@gmail.com",
     url              = "https://github.com/testautomation/DateTimeTZ",
