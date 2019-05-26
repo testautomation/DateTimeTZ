@@ -5,8 +5,8 @@
 Robot Framework DateTimeTZ library provides functionality for manipulating date and time in different locales and time zones. More information about this library can be found in the [Keyword Documentation].
 
 
-:pushpin:
-### Installation:
+
+### (:pushpin:) Installation:
 
 1. Install required dependencies:
    - `pip install -r requirements.txt`
@@ -20,8 +20,8 @@ Robot Framework DateTimeTZ library provides functionality for manipulating date 
    - `python setup.py install`
 
 
-:gift_heart:
-### Credits
+
+### (:gift_heart:) Credits
 
 [DateTime Library]
 
