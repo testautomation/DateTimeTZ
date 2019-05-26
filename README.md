@@ -1,4 +1,4 @@
-# DateTimeTZ Library for [Robot Framework]
+# DateTimeTZ Library for Robot Framework
 
 ### Introduction:
 
@@ -26,5 +26,5 @@
 Made with :heart: for [Robot Framework]
 
 [Keyword Documentation]: https://testautomation.github.io/DateTimeTZ/doc/DateTimeTZ.html
-[Robot Framework]: https://github.com/robotframework/robotframework/blob/master/INSTALL.rst
+[Robot Framework]: https://github.com/robotframework/robotframework
 [DateTime Library]: https://github.com/rmerkushin/DateTime
