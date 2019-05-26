@@ -1,18 +1,56 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys, os
-from distutils.core import setup
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
-version = open("VERSION.txt").read()
+from io import open  # required for Python 2
+from os.path import abspath, dirname, join
+from setuptools import find_packages, setup
 
-setup(name="robotframework-datetime-tz",
-      version=version,
-      description="DateTime library for Robot Framework",
-      author="Roman Merkushin",
-      author_email="rmerkushin@ya.ru",
-      url="https://github.com/rmerkushin/uDateTime",
-      package_dir={ "" : "src" },
-      packages=["DateTimeTZ"]
+CURDIR = dirname(abspath(__file__))
+
+classifiers = """
+Development Status :: 2 - Pre-Alpha
+License :: OSI Approved :: Apache Software License
+Operating System :: POSIX
+Operating System :: OS Independent
+Programming Language :: Python
+Programming Language :: Python :: 2.7
+Programming Language :: Python :: 3.6
+Topic :: Software Development :: Testing
+Topic :: Software Development :: Quality Assurance
+Framework :: Robot Framework
+Framework :: Robot Framework :: Library
+Intended Audience :: Developers
+""".strip().splitlines()
+
+
+curdir = dirname(abspath(__file__))
+with open(join(curdir, "src", "DateTimeTZ", "version.py"), encoding="utf-8") as f:
+    for line in f:
+        if line.startswith("__version__"):
+            version = line.strip().split("=")[1].strip(" '\"")
+            break
+    else:
+        version = "0.0.1"
+with open(join(curdir, "README.md"), encoding="utf-8") as f:
+    readme = f.read()
+with open(join(curdir, "requirements.txt"), encoding="utf-8") as f:
+    requirements = f.read()
+
+setup(
+    name             = "robotframework-datetime-tz",
+    version          = version,
+    description      = "Robot Framework library for date/time with locales and time zones",
+    long_description = readme,
+    long_description_content_type="text/markdown",
+    author           = "Tset Noitamotua",
+    author_email     = "tset.no@gmail.com",
+    url              = "https://github.com/testautomation/DateTimeTZ",
+    license          = "Apache License 2.0",
+    keywords         = "robotframework test automation rpa library date time locales time-zones",
+    classifiers      = classifiers,
+    install_requires = requirements,
+    zip_safe         = False,
+    package_dir      = {"": "src"},
+    packages         = find_packages("src"),
 )
