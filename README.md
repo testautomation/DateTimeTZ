@@ -1,7 +1,6 @@
 # DateTimeTZ Library for [Robot Framework] :robot: with :heart:
 
-Introduction:
--------------
+### Introduction:
 
 Robot Framework DateTimeTZ library provides functionality for manipulating date and time in different locales and time zones. More information about this library can be found in the [Keyword Documentation].
 
@@ -22,7 +21,7 @@ Robot Framework DateTimeTZ library provides functionality for manipulating date 
 
 
 
-## :gift_heart: Credits
+### :gift_heart: Credits
 
 [DateTime Library]
 
