@@ -8,6 +8,7 @@ build/
 
 # Python / virtual environments
 venv
+venv3
 
 # Robot Framework / test output
 results/
