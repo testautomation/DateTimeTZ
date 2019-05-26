@@ -9,14 +9,18 @@ from setuptools import find_packages, setup
 CURDIR = dirname(abspath(__file__))
 
 classifiers = """
-Development Status :: 4 - Beta
+Development Status :: 2 - Pre-Alpha
 License :: OSI Approved :: Apache Software License
 Operating System :: POSIX
+Operating System :: OS Independent
 Programming Language :: Python
 Programming Language :: Python :: 2.7
-Topic :: Software Development :: Testing :: Test Automation
+Programming Language :: Python :: 3.6
+Topic :: Software Development :: Testing
+Topic :: Software Development :: Quality Assurance
 Framework :: Robot Framework
 Framework :: Robot Framework :: Library
+Intended Audience :: Developers
 """.strip().splitlines()
 
 
@@ -38,11 +42,12 @@ setup(
     version          = version,
     description      = "Robot Framework library for date/time with locales and time zones",
     long_description = readme,
+    long_description_content_type="text/markdown",
     author           = "Tset Noitamotua",
     author_email     = "tset.no@gmail.com",
     url              = "https://github.com/testautomation/DateTimeTZ",
     license          = "Apache License 2.0",
-    keywords         = "robotframework test library date time locales time zones",
+    keywords         = "robotframework test automation rpa library date time locales time-zones",
     classifiers      = classifiers,
     install_requires = requirements,
     zip_safe         = False,
